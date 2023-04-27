@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+.error {
+  color: crimson;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* For Header component  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgb(170, 8, 170);
+  color: white;
+}
+header ul .counter {
+  display: flex;
+  gap: 5px;
+}
+header ul .counter button {
+  padding: 6px;
+}
+header a {
+  color: white;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.2rem;
+}
+.active {
+  color: aqua;
+}
+
+/* For AddTodo component  */
+.addtodo {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.addtodo h1 {
+  font-size: 3rem;
+}
+
+.addtodo form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.addtodo form input,
+.addtodo form button {
+  padding: 8px 15px;
+  font-size: 1.2rem;
+}
+
+/* For TodosList component  */
+.todoslist {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.todoslist h1 {
+  font-size: 3rem;
+}
+.todo {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+}
+.todo p {
+  font-style: italic;
+}
+.todo div {
+  display: flex;
+  gap: 10px;
+}
+.todo div button {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+}
+.todo div button:nth-child(1) {
+  background-color: rgb(170, 8, 170);
+  color: white;
+  border: 1px solid transparent;
+}
+.todo div button:nth-child(2) {
+  background-color: crimson;
+  color: white;
+  border: 1px solid transparent;
+}
+
+/* For singletodo component  */
+.singletodo {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.singletodo div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(235, 235, 235);
+  padding: 20px;
+}
+.singletodo a {
+  text-decoration: underline;
+}
+.singletodo button {
+  background-color: rgb(170, 8, 170);
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  width: fit-content;
+}
+
+/* For edittodo component  */
+.edittodo {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+.edittodo form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.edittodo form input,
+.edittodo form button {
+  padding: 8px 15px;
+  font-size: 1.2rem;
+}
+
+/* For Cart component  */
+.cart {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartitemmain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.cart .cartitem {
+  background-color: rgb(235, 235, 235);
+  margin-bottom: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 0px rgb(169, 168, 168);
+}
+.cartitem button:not(span button) {
+  border: 1px solid black;
+  border-radius: 25px;
+  outline: none;
+  background-color: transparent;
+  padding: 10px 18px;
+  font-weight: bold;
+}
+.cartitem p {
+  color: crimson;
+  font-weight: bold;
+}
+.msg {
+  text-align: center;
+  font-size: 1.4rem;
+  color: crimson;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.cartitem span {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.cartitem span button {
+  padding: 5px 10px;
+  user-select: none;
+}
+
+/* For todo using toolkit */
+.todotoolkit {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.todotoolkit .todoitem {
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+}
